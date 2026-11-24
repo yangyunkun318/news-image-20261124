@@ -32,9 +32,9 @@ oilfields · Hasina plans Dec 16 return · Hanoi blast kills six.
 
 ## How it runs
 
-`main.ts` (Node 22, standard library only) decodes the pre-rendered
-`entry.png` embedded as base64 and writes it to the output directory,
-verifying the PNG signature, the 1024x1024 dimensions and the 1 MiB gate:
+`main.ts` (Node 22, standard library only) copies the pre-rendered
+`entry.png` held in this repository to the output directory, verifying
+the PNG signature, the 1024x1024 dimensions and the 1 MiB gate:
 
 ```
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
